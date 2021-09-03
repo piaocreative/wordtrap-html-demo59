@@ -1,0 +1,39 @@
+.logos {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	.logo-item {
+		position: relative;
+		max-width: 16.625rem;
+		height: 5.5rem;
+		display: flex;
+
+		img {
+			width: auto;
+			height: auto;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-left: 0.5rem;
+			margin-right: 0.5rem;
+		}
+
+		&:not(:last-child) {
+			&:after {
+				position: absolute;
+				right: -3rem;
+				bottom: 1rem;
+				content: "";
+				display: inline-block;
+				width: 1px;
+				height: 3rem;
+				background-color: #3c323e;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 0 !important;
+	}
+} 

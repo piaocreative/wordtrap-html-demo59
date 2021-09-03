@@ -1,0 +1,328 @@
+
+/* ----------------------------------------------------------------
+
+	header.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for header. Thanks!
+-----------------------------------------------------------------*/
+
+
+#header {
+	position: relative;	
+
+	// Transparent header
+	&.transparent-header {
+		background-color: #857db8;
+		z-index: 199;
+
+		@include media-breakpoint-up(lg) {
+			background-color: transparent;
+
+			& + #content,
+			& + #contact-info,
+			& + #error-404 {
+				position: relative;
+				top: -$header-height;
+				margin-bottom: -$header-height;
+			}
+		}			
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Sticky Header
+-----------------------------------------------------------------*/
+
+#header-wrap {
+	padding-left: 7.8125rem;
+    padding-right: 5.8125rem;
+
+	@include media-breakpoint-down(lg) {
+		padding: 0 3rem;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Logo
+-----------------------------------------------------------------*/
+
+.navbar-brand {
+	img {
+		width: 90%;
+		height: auto;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Primary Menu
+-----------------------------------------------------------------*/
+
+#primary-menu {
+	padding-top: 4.5rem;
+
+	.nav-link {
+		color: $primary-menu-font-color;
+		font-family: $body-font;
+		font-size: $primary-menu-font-size;
+		font-weight: $primary-menu-font-weight;		
+		letter-spacing: $primary-menu-font-spacing;
+		text-transform: $primary-menu-font-tt;
+		padding-top: 0.2rem;
+		padding-bottom: 0.2rem;
+	}
+
+	.nav-item {
+		&:hover {
+			a {
+				color: #554853;
+				font-weight: 800;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding: 1rem;
+		display: initial !important;
+
+		.navbar-nav {
+			flex-direction: row;
+			justify-content: space-between !important;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Mega Menu
+-----------------------------------------------------------------*/
+
+// Please ignore mega menu now 
+
+
+/* ----------------------------------------------------------------
+	Top Buttons
+-----------------------------------------------------------------*/
+
+
+#top-btns {
+	.nav-item {
+		margin-right: 0.3rem;
+		
+		@include media-breakpoint-up(lg){
+			margin-bottom: 0;
+		}
+	}
+
+	.nav-link {
+		font-family: $body-font;
+		font-size: 0.875rem;	
+		color: $dark;		
+		line-height: 1;
+		padding: 0.7rem;
+		display: flex;
+		align-items: center;
+
+		i {
+			font-size: 1.125rem;
+			margin-right: 1rem;
+		}
+
+		&:hover {
+			color: $theme-color;
+		}	
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Links
+-----------------------------------------------------------------*/
+
+#top-links {
+	margin-right: -15rem;
+
+	.nav-item {			
+
+		@include media-breakpoint-up(lg) {
+			padding: .875rem;
+		}
+	}
+
+	a.nav-link {
+		color: $topbar-color;
+		display: block;
+		font-size: 0.875rem;
+		font-family: $body-font;	
+
+		@include media-breakpoint-up(lg) {
+			padding: 0;	
+		}
+		
+
+		&:hover {
+			color: $topbar-hover-color;
+		}
+	}
+
+	.dropdown-toggle {
+		&::after {
+			margin-left: .75em;
+		}
+	}
+
+	.dropdown-menu {
+		background: $white;
+		border: 0;
+		top: $topbar-line-height;
+		left: 0;
+		width: 100%;		
+		margin: 0;
+		border-top: 3px solid $theme-color;
+
+		@include border-radius(0);
+
+		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
+		
+		@include media-breakpoint-up(lg) {
+			width: 8.75rem;
+		}
+
+		a.dropdown-item {
+			color: $heading-color;
+			height: 2.25rem;
+			line-height: 2.25rem;
+			font-size: 0.75rem;				
+			padding: 0 0.75rem;
+
+			&:hover {
+				color: $theme-color;
+			}
+		}
+
+		img {
+			display: inline-block;
+			position: relative;
+			top: -1px;
+			width: 1rem;
+			height: 1rem;
+			margin-right: 0.25rem;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Infos
+-----------------------------------------------------------------*/
+
+#top-infos {	
+	position: absolute;
+	bottom: 3rem;
+	width: 100%;
+
+	h2 {
+		font-size: 3rem;
+		letter-spacing: 0.1rem;
+		line-height: 1;
+		border-right: 1px solid #3c323e;
+	}
+
+	.register-link {
+		font-size: 0.875rem;
+		font-weight: 700;
+		padding: 1.2rem 3rem;
+		border:1px solid $theme-color;
+		letter-spacing: 0.1rem;
+
+		&:hover {
+			background-color: $theme-color;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		bottom: 1.5rem;
+	}
+}		
+
+
+/* ----------------------------------------------------------------
+	Top Social
+-----------------------------------------------------------------*/
+
+#top-social,
+#top-social ul { margin: 0; }
+
+#top-social {
+    text-align: center; 
+
+    ul {
+		li {
+			margin-bottom: 2.5rem;
+			transform: rotate(90deg);
+
+			a {
+				font-family: $body-font;
+        		font-size: 0.75rem;
+				font-weight: 500;
+				color: $dark;
+				text-decoration: none;
+	
+				&:hover {
+					color: $theme-color;
+				}
+			}
+		}
+
+		@include media-breakpoint-down(lg) {
+			display: flex;
+			gap: 1rem;
+
+			li {
+				transform: rotate(0);
+			}
+		}
+    }
+}
+
+
+/* ----------------------------------------------------------------
+	Top Login
+-----------------------------------------------------------------*/
+
+
+
+/* ----------------------------------------------------------------
+	Top Search
+-----------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Cart
+-----------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Account
+-----------------------------------------------------------------*/
+
+
+
+
+
+

@@ -1,0 +1,164 @@
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+.link-icon {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 4.5625rem;
+	height: 3.5625rem;
+
+	@include transition(all 0.3s ease-in-out);
+
+	&.left {
+		background-image: url(../images/icons/link-left.png);
+
+		&:hover {
+			transform: translateX(-1rem);
+		}
+	}
+
+	&.right {
+		background-image: url(../images/icons/link-right.png);
+		
+		&:hover {
+			transform: translateX(1rem);
+		}
+	}
+}
+
+.indicator {
+	a {
+		display: block;
+		font-size: 0.25rem;
+		padding: 0.5rem;
+		color: #8f8f8f;
+
+		&.active {
+			font-size: 0.45rem;
+			color: $theme-color;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		display: flex;
+	}
+}
+
+.sale-banner {
+	padding: 1rem;
+
+	img {
+		width: 4rem;
+		height: 3.5rem;
+	}
+	
+	h4 {
+		font-size: 1.125rem;
+	}
+
+	p {
+		color: #4f4f4f;
+		line-height: 1.2rem;
+		font-weight: 0.875rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding: 1rem;
+	}
+}
+
+// time //
+#time {
+	position:absolute;
+	bottom: 2rem;
+
+	p {
+		font-family: $body-font;
+		font-size: 0.875rem;
+		font-weight: 300;
+		color: #262626;
+	}
+
+	span {
+		display: inline-block;
+		font-family: $heading-font;
+		font-size: $h2-font-size;
+		font-weight: 700;
+		color: #262626;
+		margin-bottom: 1.25rem;
+	}
+}
+
+
+.shop-now-link {
+	display: inline-block;
+    font-family: $body-font;
+    font-size: .875rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 1.2rem 4.2rem;
+    background-color: #3b4427;
+    text-decoration: none;
+
+	&:hover {
+		background-color: rbga($theme-color, 0.5);
+	}
+}
+
+.read-more-link {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: .875rem;
+	color: $dark;
+	text-decoration: none;
+	font-family: $body-font;
+	font-weight: 600;
+	letter-spacing: 0.05rem;
+}
+
+#top-rated-product {
+	position: relative;
+	top: -16rem;
+	margin-bottom: -18rem !important;
+
+	@include media-breakpoint-down(lg) {
+		top: 0;
+		margin: 0 !important;
+	}
+}
+
+.about-more {
+	position: absolute;
+    right: -7rem;
+    bottom: -10rem;
+
+	@include media-breakpoint-down(lg) {
+		position: relative;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.about-detail {
+	p {
+		font-family: $heading-font;
+		font-size: 5.375rem;
+		font-weight: 500;
+		line-height: 1;
+	}
+
+	span {
+		font-family: $body-font;
+		font-size: 0.875rem;
+		font-weight: 400;
+	}
+}

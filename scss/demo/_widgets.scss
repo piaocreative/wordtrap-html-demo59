@@ -1,0 +1,250 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+	position: relative;
+
+	p {
+		font-family: "Open Sans",sans-serif;
+		font-weight: 400;
+		line-height: 1.3rem!important;
+		color: #868686;
+		font-size: 0.875rem;
+	}
+
+	a {
+		font-family: $body-font;
+		font-weight: 400;
+	}
+
+	.widget-title {
+		color: #362e29;		
+		font-size: 0.875rem;
+		margin-bottom: 1.4rem;
+		font-family: $body-font;
+		font-weight: 700;
+		text-transform: uppercase;
+	}	
+
+	// Widget - Social
+	&.widget-social {
+		.widget-content {
+			p {
+				color: $white;
+				font-size: 1.125rem;
+				display: block;
+				font-family: $heading-font;
+			}
+
+			.social-icons {
+				padding: 0;
+				list-style: none;
+	
+				li {
+					line-height: 1;
+					margin-bottom: 0.7rem;
+
+					a {	
+						font-family: $body-font;
+						font-size: 0.875rem;
+						font-weight: 500;
+						display: inline-block;
+						color: $dark;		
+	
+						@include transition(all 0.3s ease-in-out);
+			
+						&:hover {
+							color: $theme-color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		ul {
+			list-style: none;
+
+			li {
+				line-height: 1;
+				margin-bottom: 0.7rem;
+
+				a {
+					font-family: $body-font;
+					font-weight: 400;
+					color: #707070;
+					text-decoration: none;
+					font-size: 0.875rem;
+
+					&:hover {
+						color: #362e29;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+
+		@include media-breakpoint-down(lg) {
+			padding: 0 !important;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&.widget-links {
+
+			.widget-content {
+				justify-content: space-between;
+			}
+
+			ul {
+				width: auto;
+				margin: auto;
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		p {
+			color: $white;
+			font-size: 1.125rem;
+			display: block;
+			font-family: $heading-font;
+		}
+		.payments {
+
+			.payment-icon {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: .5rem;
+				padding: 0.2rem;
+				background-size: 80% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+				border-radius: 0.5rem !important;
+
+				img {
+					width: 2rem !important;
+				}
+			}
+		}
+	}
+
+	// Widget - custom html
+	&.widget-custom-html {
+		.widget-content {
+			a {	
+				font-family: $body-font;
+				font-size: 0.875rem;
+				font-weight: 500;
+				display: block;
+				text-decoration: none;
+				color: $dark;
+
+				&:hover {
+					color: $theme-color;
+				}
+			}
+		}
+	}
+
+	// Widget - feedback
+	&.widget-feedback {
+		.widget-content {
+			p {
+				letter-spacing: 0.1rem
+			}
+
+			#widget-feedback-form {
+
+				input {
+					background-color: #f9f9f9;
+					color:#d0d0d0;
+				}
+				
+				.input-group-append {
+					margin-left: -2.875rem;
+				}
+			}
+		}
+	}
+
+	&.widget-subscribe {
+		.widget-content {
+			p {
+				font-size:0.8rem;
+				color: #362e29;
+				letter-spacing: 0.05rem;
+			}
+
+			#widget-subscribe-form {
+				input {
+					font-size: 0.875rem;
+					border-bottom: 1px solid #978888;
+				}
+
+				.input-group-append {
+					margin-left: -7rem;
+				}
+
+				a {
+					font-family: $body-font;
+					font-size: 0.875rem;
+					font-weight: 700;
+					color: $dark;
+					display: flex;
+					align-items: center;
+				}
+			}
+		}
+	}
+
+	// Widget - Products
+	&.widget-products {
+		.widget-content {
+			.product {
+				display: flex;
+				align-items: center;
+				margin-bottom: 0.625rem;
+
+				.product-image {
+					flex: 1;
+					height: 8.25rem;
+					max-width: 9.75rem;
+				}
+
+				.product-details {
+					flex: 1;
+					padding: 0 1.25rem;					
+				}
+
+				.product-price {					
+					margin-bottom: 0.625rem;
+				}
+
+				.product-title {
+					a {
+						color: $white;																		
+					}					
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,282 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* Category
+-----------------------------------------------------------------*/
+.category {
+	position: relative;	
+	margin-bottom: 1.875rem;
+
+	.category-image {
+		img {
+			width: 100%;
+		}
+	}
+
+	.category-details {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: 1rem 1.5rem;
+		background: $white;
+		opacity: 0.7;
+	}
+
+	.category-title {
+		font-size: 0.875rem;
+		font-family: $body-font;
+		font-weight: 700;
+		color: $dark;
+		text-transform: uppercase;
+		letter-spacing: 0.05rem;
+	}
+}
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	margin-bottom: 1.875rem;
+	position: relative;
+
+	.product-image {
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+
+		> a:nth-of-type(2) {
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			@include transition(all 0.3s ease-in-out);
+		}
+	}
+
+	.product-details {
+		padding: 1.25rem 0;
+		z-index: 1;
+	}
+
+	.product-price {
+		font-size: 0.875rem;
+		font-family: $body-font;
+		font-weight: 700;
+		line-height: 1;
+		color: $secondary;
+
+		del {
+			position: relative;
+			margin-left: 0.5rem;
+			color: $secondary;
+			font-weight: 700;
+			text-decoration: none;
+
+			&:before {
+				position: absolute;
+				content: "";
+				left: 0;
+				top: 50%;
+				right: 0;
+				border-top: 1px solid;
+				border-color: inherit;
+				transform:rotate(5deg);
+			}
+		}
+	}
+
+	.product-categories {
+		margin-top: -0.3rem;
+		a {
+			color: #6a6a6a;
+			font-size: 0.875rem;
+			text-decoration: none;
+		}
+	}
+
+	.product-title {
+		font-family: $body-font;
+		font-size: 0.875rem;
+		font-weight: 500;
+		line-height: 1.7;
+	}
+
+	.product-rating {
+		line-height: 1;
+		color: $secondary;
+		font-size: 0.875rem;
+
+		span {
+			font-family: $body-font;
+		}
+
+		i {
+			color: $dark;
+			font-size: 0.6rem;
+
+			&.empty {
+				color: rgba(#f6aa46, 0.5);
+			}
+		}
+	}
+
+	.product-btns {
+		position: absolute;
+		top: 1.5rem;
+		right: 1.5rem;
+		opacity: 0;
+
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	&:hover {
+		.product-image {
+			> a:nth-of-type(2) {
+				z-index: 1;
+				opacity: 1;
+			}
+		}
+	}
+
+	.add-to-cart, .add-to-wishlist {
+		font-family: $body-font;
+		font-size: 1.25rem;
+		color: #3e3440;
+		font-weight: 700;
+		padding: 0.3rem;
+
+		@include transition(all 0.3s ease-in-out);	
+
+		&:hover {
+			color: $theme-color;
+		}
+	}
+
+	&:hover {
+		.product-btns {
+			opacity: 1;
+		}
+	}
+}
+
+.onbest,
+.ontop,
+.onnew,
+.onhot,
+.onsale {
+    position: absolute;
+	top: 0;
+	left: 0;
+	font-family: $body-font;
+	font-size: 0.875rem;
+	font-weight: 400;
+    padding: 0.7rem 0.8rem;
+	text-transform: uppercase;
+    line-height: 1;
+    z-index: 2;
+}
+
+.onhot {
+	top: 0;
+	left: 0;
+	font-size: .8rem;
+	color: $white;
+	letter-spacing: 0.1rem;
+	background-color: $theme-color;
+	border-bottom-right-radius: 1rem;
+}
+
+.onnew {
+	color: $theme-color;
+}
+
+.onbest {
+	background-color: #8b5ec7;
+	color: $white;
+}
+
+.ontop {
+	background-color: #5adbde;
+	color: $white;
+}
+
+.onsale {
+	background-color: $theme-color;
+	color: $white;
+}
+
+/* Ads
+-----------------------------------------------------------------*/
+
+.ads {
+    position: relative;
+    display: block;
+	margin-bottom: 1.875rem;
+
+	.ads-bg {
+		img {
+			height: 100%;
+
+			@include media-breakpoint-down(lg) {
+				height: 30rem;
+			}
+		}
+
+	}
+
+	&.ads1 {
+		.ads-body {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			padding: 4.5rem;
+
+			h5 {
+				font-size: 2rem;
+			}
+
+			p {
+				font-size: 0.75rem;
+				line-height: 1.5rem;
+				font-weight: 600;
+				color: $secondary;
+				font-family: $body-font;
+			}
+
+			@include media-breakpoint-down(lg) {
+				p {
+					margin-bottom: 0.5rem;
+				}
+
+				h2 {
+					margin: 0;
+				}
+			}
+
+			@include media-breakpoint-down(sm) {
+				padding-left: 3rem;
+				padding-right: 3rem;
+			}
+		}
+	}
+}
