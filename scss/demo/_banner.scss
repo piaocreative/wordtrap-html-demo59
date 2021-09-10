@@ -52,3 +52,22 @@
         bottom: 0;
     }
 }
+
+.banners {
+    .slick-dots {
+        display: flex;
+        flex-direction: column;
+        width: 2rem;
+        position: absolute;
+        right: -9rem;
+        top: 40%;
+
+        .slick-active {
+            button {
+                &:before {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}

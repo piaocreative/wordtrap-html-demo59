@@ -42,59 +42,59 @@
     
             <div id="header-wrap">
 
-                <div class="row g-0">
+                <div class="container-fluid px-0">
 
-                    <div class="col-lg-9">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
 
-                        <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="col-lg-6">
 
-                            <div class="container-fluid px-0">
-        
-                                <!-- Logo
+                            <!-- Logo
+                            ============================================= -->
+                            <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
+                                <img src="./images/logo.png" alt="Saler Logo">
+                            </a>
+
+                        </div>
+
+                        <div class="co-lg-6 ps-lg-7">
+
+                            <!-- Navbar Toggler
+                            ============================================= -->
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            
+                            <!-- Navbar Collapse
+                            ============================================= -->
+                            <div id="navbarCollapse" class="collapse navbar-collapse">
+    
+                                <!-- Top Buttons
                                 ============================================= -->
-                                <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
-                                    <img src="./images/logo.png" alt="Saler Logo">
-                                </a>
-                                
-                                <!-- Navbar Toggler
-                                ============================================= -->
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                
-                                <!-- Navbar Collapse
-                                ============================================= -->
-                                <div id="navbarCollapse" class="collapse navbar-collapse justify-content-end">
-        
-                                    <!-- Top Buttons
-                                    ============================================= -->
-                                    <div id="top-btns">
-                                        
-                                        <ul class="navbar-nav flex-row">
-        
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link"><i class="far fa-user"></i>Account</a>
-                                            </li
-                                            >
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link"><i class="far fa-heart"></i>Like (1)</a>
-                                            </li>
-        
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link"> <i class="fas fa-shopping-cart"></i>Card (2)</a>
-                                            </li>
-        
-                                        </ul>
-        
-                                    </div><!-- #top-btns -->
-        
-                                </div><!-- #header-right-col -->
-        
-                            </div>
-        
-                        </nav>
+                                <div id="top-btns">
+                                    
+                                    <ul class="navbar-nav flex-row">
+    
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link"><i class="far fa-user"></i>Account</a>
+                                        </li
+                                        >
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link"><i class="far fa-heart"></i>Like (1)</a>
+                                        </li>
+    
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link"> <i class="fas fa-shopping-cart"></i>Card (2)</a>
+                                        </li>
+    
+                                    </ul>
+    
+                                </div><!-- #top-btns -->
+    
+                            </div><!-- #header-right-col -->
 
-                    </div>
+                        </div>
+    
+                    </nav>
 
                 </div>
 
@@ -112,7 +112,7 @@
 		        ============================================= -->
                 <div class="row g-0 position-relative">
 
-                    <div class="col-lg-2">
+                    <div class="col-lg-1">
 
                         <div class="d-flex flex-column justify-content-between h-100">
                             <!-- Primary Navigation
@@ -152,7 +152,7 @@
 
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-5">
                         
                         <!-- banner
                         ============================================= -->
@@ -170,29 +170,31 @@
         
                                 <div class="section">
         
-                                    <div id="page-title" class="position-relative">
+                                    <div id="page-title" class="position-relative ps-lg-7">
                                         <h2 class="title h1">Contact Us</h2>
                                         <div class="col-7">
                                             <p class="body-font fs-6 mb-0">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing.</p>
                                         </div>
 
-                                        <div class="widget widget-custom-html mt-3">
+                                        <div class="widget widget-custom-html mt-3 mb-4">
                                             <h4 class="heading-font fw-semi-bold mb-2">Contacts</h4>
                                             <div class="widget-content">
                                                 <a href="#">
-                                                    <span>+191 475 29 43</span>
+                                                    <span class="fw-semi-bold">+191 475 29 43</span>
                                                 </a>
                                                 <a href="#">
-                                                    <span>+191 733 47 23</span>
+                                                    <span class="fw-semi-bold">+191 733 47 23</span>
                                                 </a>
                                                 <a href="#">
-                                                    <span>sallershop@gmail.com</span>
+                                                    <span class="fw-semi-bold">sallershop@gmail.com</span>
                                                 </a>
                                                 <a href="#">
-                                                    <span>123 Old Mill Way street</span>
+                                                    <span class="fw-semi-bold">123 Old Mill Way street</span>
                                                 </a>
                                             </div>                            
                                         </div>
+
+                                        <a href="#" class="text-uppercase shop-now-link">Contact Now</a>
                                     </div>
         
                                 </div>
@@ -251,7 +253,7 @@
                                         <div class="row g-3">
         
                                             <div class="form-floating m-0">
-                                                <input type="text" class="form-control border-dark" id="contactName" placeholder="Name">
+                                                <input type="text" class="form-control" id="contactName" placeholder="Name">
                                                 <label for="contactName" class="text-dark">Enter your first and last name</label>
                                             </div>
             
@@ -341,10 +343,10 @@
                                 <img src="images/logo.png" alt="Saler Logo" class="mb-2">
                             </a>
 
-                            <p class="body-font fs-6 lh-1 mt-3 mb-0">2021 SALLER.</p>
-                            <p class="body-font fs-6 mb-2">All rights reserved.</p>
-                            <p class="body-font lh-1 fs-6 mb-0">Privacy policy.</p>
-                            <p class="body-font fs-6">Public offer.</p>
+                            <p class="body-font lh-1 mt-3 mb-0">2021 SALLER.</p>
+                            <p class="body-font mb-2">All rights reserved.</p>
+                            <p class="body-font lh-1 mb-0">Privacy policy.</p>
+                            <p class="body-font">Public offer.</p>
 
                         </div>
 

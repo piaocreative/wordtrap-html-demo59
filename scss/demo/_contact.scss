@@ -6,6 +6,10 @@
 #contact {
 	input,select {
 		border-bottom: 1px solid #cdcdcd;
+
+		&:focus {
+			border-color: $theme-color;
+		}
 	}
 	
 	input[type=text], input[type=email] {

@@ -44,8 +44,8 @@
 -----------------------------------------------------------------*/
 
 #header-wrap {
-	padding-left: 7.8125rem;
-    padding-right: 5.8125rem;
+	padding-left: 2.8125rem;
+    padding-right: 3.8125rem;
 
 	@include media-breakpoint-down(lg) {
 		padding: 0 3rem;
@@ -59,7 +59,7 @@
 
 .navbar-brand {
 	img {
-		width: 90%;
+		min-width: 5rem;
 		height: auto;
 	}
 }
