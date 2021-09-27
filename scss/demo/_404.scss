@@ -5,6 +5,10 @@
 -----------------------------------------------------------------*/
 .error-404 {
     position: relative;
+    
+    .error-banner {
+        height: 38rem;
+    }
 
     .error-logo {
         font-family: $heading-font;
@@ -37,10 +41,6 @@
     }
 
     @include media-breakpoint-down(lg) {
-        .error-banner {
-            height: 35rem;
-        }
-
         .error-logo {
             font-size: 13.5rem;
         }

@@ -32,6 +32,10 @@
 			transform: translateX(1rem);
 		}
 	}
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+	} 
 }
 
 .indicator {
@@ -47,9 +51,13 @@
 		}
 	}
 
-	@include media-breakpoint-down(lg) {
-		display: flex;
+	@include media-breakpoint-down(xxl) {
+		display: none;
 	}
+}
+
+.slick-slide {
+	padding: 2rem;
 }
 
 .sale-banner {
@@ -127,8 +135,8 @@
 
 #top-rated-product {
 	position: relative;
-	top: -16rem;
-	margin-bottom: -18rem !important;
+	top: -4vw;
+	margin-bottom: -8rem !important;
 
 	@include media-breakpoint-down(lg) {
 		top: 0;
@@ -138,7 +146,7 @@
 
 .about-more {
 	position: absolute;
-    right: -7rem;
+    right: -7vw;
     bottom: -10rem;
 
 	@include media-breakpoint-down(lg) {

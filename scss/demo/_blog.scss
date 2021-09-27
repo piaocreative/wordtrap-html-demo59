@@ -13,6 +13,10 @@
 	position: relative;
 	padding: 1.5rem 0;
 	border-bottom: 1px solid #d4d4d4;
+
+	@include media-breakpoint-down(lg) {
+		border: none;
+	}
 }
 
 .post-thumbnail {

@@ -47,6 +47,10 @@
 	padding-left: 2.8125rem;
     padding-right: 3.8125rem;
 
+	@include media-breakpoint-down(xxl) {
+		padding-left: 0.25rem;
+	}
+
 	@include media-breakpoint-down(lg) {
 		padding: 0 3rem;
 	}
@@ -291,6 +295,7 @@
 
 			li {
 				transform: rotate(0);
+				margin: 0;
 			}
 		}
     }

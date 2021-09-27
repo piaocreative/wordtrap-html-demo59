@@ -202,6 +202,10 @@
 
 				.input-group-append {
 					margin-left: -7rem;
+
+					@include media-breakpoint-down(lg) {
+						margin-left: -1rem;
+					}
 				}
 
 				a {

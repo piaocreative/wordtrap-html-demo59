@@ -7,6 +7,14 @@ $( document ).ready( function() {
     slidesToShow: 1,
     adaptiveHeight: true,
     arrows:false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          dots: false
+        }
+      },
+    ]
   });
 
   $(".banner-prev").click(function(e) {
