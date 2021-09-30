@@ -44,11 +44,12 @@
 -----------------------------------------------------------------*/
 
 #header-wrap {
-	padding-left: 2.8125rem;
+	padding-left: 2rem;
     padding-right: 3.8125rem;
 
 	@include media-breakpoint-down(xxl) {
 		padding-left: 0.25rem;
+		padding-right: 0;
 	}
 
 	@include media-breakpoint-down(lg) {
