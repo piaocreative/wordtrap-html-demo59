@@ -38,8 +38,6 @@
 	}
 
 	.category-title {
-		font-size: 0.875rem;
-		font-family: $body-font;
 		font-weight: 700;
 		color: $dark;
 		text-transform: uppercase;
@@ -77,8 +75,6 @@
 	}
 
 	.product-price {
-		font-size: 0.875rem;
-		font-family: $body-font;
 		font-weight: 700;
 		line-height: 1;
 		color: $secondary;
@@ -114,7 +110,7 @@
 
 	.product-title {
 		font-family: $body-font;
-		font-size: 0.875rem;
+		font-size: 1rem;
 		font-weight: 500;
 		line-height: 1.7;
 	}
@@ -123,10 +119,6 @@
 		line-height: 1;
 		color: $secondary;
 		font-size: 0.875rem;
-
-		span {
-			font-family: $body-font;
-		}
 
 		i {
 			color: $dark;
@@ -157,7 +149,6 @@
 	}
 
 	.add-to-cart, .add-to-wishlist {
-		font-family: $body-font;
 		font-size: 1.25rem;
 		color: #3e3440;
 		font-weight: 700;
@@ -185,9 +176,6 @@
     position: absolute;
 	top: 0;
 	left: 0;
-	font-family: $body-font;
-	font-size: 0.875rem;
-	font-weight: 400;
     padding: 0.7rem 0.8rem;
 	text-transform: uppercase;
     line-height: 1;
@@ -261,25 +249,13 @@
 			padding: 4rem;
 
 			h5 {
-				font-size: 2rem;
+				font-size: 2.25rem;
 			}
 
 			p {
-				font-size: 0.75rem;
 				line-height: 1.5rem;
 				font-weight: 600;
 				color: $secondary;
-				font-family: $body-font;
-			}
-
-			@include media-breakpoint-down(lg) {
-				p {
-					margin-bottom: 0.5rem;
-				}
-
-				h2 {
-					margin: 0;
-				}
 			}
 
 			@include media-breakpoint-down(sm) {

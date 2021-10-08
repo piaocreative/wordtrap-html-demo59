@@ -22,7 +22,6 @@
 	bottom: 0;
 
 	.title {
-		font-family: $heading-font;
 		font-weight: 600;
 		line-height: 1.2;
 		letter-spacing: 0.1rem;
@@ -35,32 +34,8 @@
 		letter-spacing: 0.05rem;
 	}
 
-	p {
-		font-weight: 500;
-		color: $dark;
-		line-height: 1.7;
-	}
-
 	@include media-breakpoint-down(lg) {
 		padding-left: 1rem;
 		padding-right: 1rem;
-	}
-}
-
-.breadcrumb {
-	display: flex;
-	font-size: $h6-font-size;
-	padding: 0.625rem 0;
-
-	li {
-		padding: 0 0.625rem;
-
-		&.active {
-			color: #ddcef5;
-		}
-
-		&:first-child {
-			padding-left: 0;
-		}
 	}
 }

@@ -4,40 +4,9 @@
 
 -----------------------------------------------------------------*/
 #contact {
-	input,select {
-		border-bottom: 1px solid #cdcdcd;
-
-		&:focus {
-			border-color: $theme-color;
-		}
-	}
-	
-	input[type=text], input[type=email] {
-		height: 3.1rem;
-	}
-
-	select {
-		padding-bottom: 0.8rem ;
-		font-size: 0.825rem;
-	}
-
 	label {
 		color: #acacac;
-		font-size: 0.825rem;
-		font-family: $body-font;
 		display: block;
-		margin-bottom: -1rem;
 		padding-left: 0.8rem;
-	}
-
-	button {
-		font-size: .8rem;
-		padding: 1.5rem 4.5rem;
-		font-weight: 700;
-		letter-spacing: 0.1rem;
-	}
-
-	p {
-		font-weight: 500;
 	}
 }

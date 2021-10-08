@@ -92,7 +92,6 @@
 	bottom: 2rem;
 
 	p {
-		font-family: $body-font;
 		font-size: 0.875rem;
 		font-weight: 300;
 		color: #262626;
@@ -111,8 +110,6 @@
 
 .shop-now-link {
 	display: inline-block;
-    font-family: $body-font;
-    font-size: .875rem;
     font-weight: 600;
     color: #fff;
     padding: 1.2rem 4.2rem;
@@ -128,34 +125,25 @@
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-	font-size: .875rem;
 	color: $dark;
-	text-decoration: none;
-	font-family: $body-font;
 	font-weight: 600;
 	letter-spacing: 0.05rem;
 }
 
 #top-rated-product {
 	position: relative;
-	top: -4vw;
-	margin-bottom: -8rem !important;
-
-	@include media-breakpoint-down(lg) {
-		top: 0;
-		margin: 0 !important;
+	
+	@include media-breakpoint-up(lg) {
+		top: -4vw;
+		margin-bottom: -8rem !important;
 	}
 }
 
 .about-more {
-	position: absolute;
-    right: -7vw;
-    bottom: -10rem;
-
-	@include media-breakpoint-down(lg) {
-		position: relative;
-		right: 0;
-		bottom: 0;
+	@include media-breakpoint-up(lg) {
+		position: absolute;
+		right: -7vw;
+		bottom: -10rem;
 	}
 }
 
@@ -165,11 +153,5 @@
 		font-size: 5.375rem;
 		font-weight: 500;
 		line-height: 1;
-	}
-
-	span {
-		font-family: $body-font;
-		font-size: 0.875rem;
-		font-weight: 400;
 	}
 }
