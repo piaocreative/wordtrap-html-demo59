@@ -164,11 +164,6 @@
 	}
 
 	a.nav-link {
-		color: $topbar-color;
-		display: block;
-		font-size: 0.875rem;
-		font-family: $body-font;	
-
 		@include media-breakpoint-up(lg) {
 			padding: 0;	
 		}
@@ -235,25 +230,6 @@
 	bottom: 3rem;
 	width: 100%;
 
-	h2 {
-		font-size: 3rem;
-		letter-spacing: 0.1rem;
-		line-height: 1;
-		border-right: 1px solid #3c323e;
-	}
-
-	.register-link {
-		font-size: 0.875rem;
-		font-weight: 700;
-		padding: 1.2rem 3rem;
-		border:1px solid $theme-color;
-		letter-spacing: 0.1rem;
-
-		&:hover {
-			background-color: $theme-color;
-		}
-	}
-
 	@include media-breakpoint-down(lg) {
 		bottom: 1.5rem;
 	}
@@ -276,11 +252,8 @@
 			transform: rotate(90deg);
 
 			a {
-				font-family: $body-font;
-        		font-size: 0.875rem;
 				font-weight: 500;
 				color: $dark;
-				text-decoration: none;
 	
 				&:hover {
 					color: $theme-color;

@@ -107,20 +107,6 @@
 	}
 }
 
-
-.shop-now-link {
-	display: inline-block;
-    font-weight: 600;
-    color: #fff;
-    padding: 1.2rem 4.2rem;
-    background-color: #3b4427;
-    text-decoration: none;
-
-	&:hover {
-		background-color: rbga($theme-color, 0.5);
-	}
-}
-
 .read-more-link {
 	display: flex;
 	align-items: center;

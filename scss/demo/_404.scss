@@ -30,13 +30,6 @@
             font-size: 0.8rem;
             letter-spacing: 0.05rem;
         }
-
-        a {
-            padding: 1.5rem 3.5rem;
-            font-size: 0.875rem;
-            font-weight: 600;
-            letter-spacing: 0.07rem;
-        }
     }
 
     @include media-breakpoint-down(lg) {
