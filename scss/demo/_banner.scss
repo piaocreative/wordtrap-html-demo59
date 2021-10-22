@@ -16,7 +16,7 @@
 -----------------------------------------------------------------*/
 
 
-#banner {
+.banner {
     position: relative;
 
     img {
@@ -24,15 +24,15 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
-
-        @include media-breakpoint-down(lg) {
-            height: 45rem;
-        }
     }
 
     .banner-wrap {
         padding-left: 4.375rem;
         padding-right: 4.375rem;
+    }
+
+    &#about-banner {
+        padding: 6.375rem 0;
     }
 }
 

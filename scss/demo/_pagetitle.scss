@@ -16,11 +16,6 @@
 -----------------------------------------------------------------*/
 
 #page-title {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-
 	.title {
 		font-weight: 600;
 		line-height: 1.2;
@@ -32,10 +27,5 @@
 		font-weight: 600;
 		color: #262626;
 		letter-spacing: 0.05rem;
-	}
-
-	@include media-breakpoint-down(lg) {
-		padding-left: 1rem;
-		padding-right: 1rem;
 	}
 }

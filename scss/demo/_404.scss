@@ -4,11 +4,13 @@
 
 -----------------------------------------------------------------*/
 .error-404 {
+    background-image: url(../images/404/404.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
-    
-    .error-banner {
-        height: 38rem;
-    }
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 
     .error-logo {
         font-family: $heading-font;
@@ -17,15 +19,10 @@
         color: $secondary;
         line-height: 1;
         letter-spacing: 0.5rem;
+        margin-top: -6rem;
     }
 
     .error-content {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        height: 100%;
-
         p {
             font-size: 0.8rem;
             letter-spacing: 0.05rem;
