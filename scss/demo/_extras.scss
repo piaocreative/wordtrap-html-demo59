@@ -60,34 +60,12 @@
 }
 
 .slick-slide {
-	padding: 2rem;
-}
-
-.sale-banner {
-	padding: 1rem;
-
-	img {
-		width: 4rem;
-		height: 3.5rem;
-	}
-	
-	h4 {
-		font-size: 1.125rem;
-	}
-
-	p {
-		color: #4f4f4f;
-		line-height: 1.2rem;
-		font-weight: 0.875rem;
-	}
-
-	@include media-breakpoint-down(lg) {
-		padding: 1rem;
-	}
+	padding: 0 1rem;
+	height: auto;
 }
 
 // time //
-#time {
+#timer {
 	position:absolute;
 	bottom: 2rem;
 
@@ -139,5 +117,54 @@
 		font-size: 5.375rem;
 		font-weight: 500;
 		line-height: 1;
+	}
+}
+
+.slick-dots {
+	display: flex;
+	flex-direction: column;
+	width: 2rem;
+
+	.slick-active {
+		button {
+			&:before {
+				font-size: 0.6rem;
+			}
+		}
+	}
+}
+
+.new-arrivals {
+    .slick-dots {
+        top: 45%;
+        right: -4rem;
+    }
+}
+
+.top-product {
+	.slick-dots {
+		top: 45%;
+		left: -42rem;
+	}
+}
+
+.bestsellers {
+	.slick-dots {
+		top: 0;
+		left: 4rem;
+	}
+}
+
+.collections {
+	.slick-dots {
+		top: 0%;
+		left: -5.5rem;
+	}
+}
+
+.about-slick {
+	.slick-dots {
+		top: 45%;
+		right: -5rem;
 	}
 }
